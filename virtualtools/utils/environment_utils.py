@@ -435,10 +435,15 @@ def gen_puzzle_from_limits(set, name, variations_limits, filename):
     with open(filename, 'w') as f:
         json.dump(variation, f, default=int)
 
-
+def _bb_to_tuple(bb):
+    if isinstance(bb, (tuple, list)):
+        return bb
+    return (bb.left, bb.bottom, bb.right, bb.top)
+    
 def get_collision_areas(tp, obj, tool):
     wd = load_vt_from_dict(tp._worlddict)
     obj_bb = obj.get_bounding_box()
+    obj_bb = _bb_to_tuple(obj.get_bounding_box())
     tool_bb = tp.tool_bbox(tool)
 
     tool_width = tool_bb[1][0] - tool_bb[0][0]
@@ -559,7 +564,7 @@ def get_collision_areas(tp, obj, tool):
 def get_puzzle_bboxes(dynamic_objects):
     bboxes = {}
     for obj in dynamic_objects:
-        bbox = obj.get_bounding_box()
+        bbox = _bb_to_tuple(obj.get_bounding_box())
         # make sure bbox is minx, miny, maxx, maxy
         bbox = np.array([min(bbox[0],bbox[2])-1, 
                             min(600-bbox[1],600-bbox[3])-1, 

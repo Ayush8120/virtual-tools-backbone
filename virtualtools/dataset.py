@@ -178,6 +178,8 @@ def simulate_single_puzzle(set, name, variation, actions, size, tool, output_siz
                 if 'FAKE' in obj.name:
                     continue
                 bbox = path_dict[obj.name][ii][3]
+                if not isinstance(bbox, (tuple, list, np.ndarray)):
+                    bbox = (bbox.left, bbox.bottom, bbox.right, bbox.top)
                 obj_geom = path_dict[obj.name][ii][4]
                 # x, y as center of the object
                 x = (bbox[0] + bbox[2]) / 2

@@ -1,0 +1,427 @@
+.
+├── database
+│   └── __init__.py
+├── dataset.py
+├── generators
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── tpgenerator.cpython-39.pyc
+│   │   └── vtgenerator.cpython-39.pyc
+│   ├── tpgenerator.py
+│   └── vtgenerator.py
+├── helpers
+│   ├── geom.py
+│   ├── __init__.py
+│   ├── misc.py
+│   ├── physics.py
+│   ├── pmhelp.py
+│   └── __pycache__
+│       ├── geom.cpython-39.pyc
+│       ├── __init__.cpython-39.pyc
+│       ├── misc.cpython-39.pyc
+│       ├── physics.cpython-39.pyc
+│       └── pmhelp.cpython-39.pyc
+├── __init__.py
+├── interfaces
+│   ├── gameTypes.py
+│   ├── __init__.py
+│   ├── oneball.py
+│   ├── phyre_actions.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── oneball.cpython-39.pyc
+│   │   ├── running.cpython-39.pyc
+│   │   ├── toolpicker.cpython-39.pyc
+│   │   ├── vertexdrawer.cpython-39.pyc
+│   │   └── vtinterface.cpython-39.pyc
+│   ├── running.py
+│   ├── simpledropper.py
+│   ├── toolpicker.py
+│   ├── vertexdrawer.py
+│   └── vtinterface.py
+├── __pycache__
+│   ├── dataset.cpython-39.pyc
+│   └── __init__.cpython-39.pyc
+├── tree.txt
+├── trials
+│   ├── Original
+│   │   ├── Basic
+│   │   │   ├── Basic.png
+│   │   │   └── templates
+│   │   │       ├── Basic_20240419-224009.json
+│   │   │       ├── Basic_20240429-192424.json
+│   │   │       ├── Basic_20240429-193039.json
+│   │   │       ├── Basic_20240429-193443.json
+│   │   │       ├── Basic_20240429-194528.json
+│   │   │       ├── Basic_20240429-194807.json
+│   │   │       ├── Basic_20240429-195251.json
+│   │   │       ├── Basic_20240429-195351.json
+│   │   │       ├── Basic_20240429-195448.json
+│   │   │       ├── Basic_20240429-195701.json
+│   │   │       ├── Basic_20240429-200058.json
+│   │   │       ├── Basic_20240429-205753.json
+│   │   │       ├── Basic_20240429-205850.json
+│   │   │       ├── Basic_20240429-210114.json
+│   │   │       ├── Basic_20240429-210529.json
+│   │   │       └── Basic_20240429-211943.json
+│   │   ├── Basic.json
+│   │   ├── Bridge
+│   │   │   ├── Bridge.png
+│   │   │   └── templates
+│   │   │       ├── Bridge_20240429-222416.json
+│   │   │       ├── Bridge_20240429-222545.json
+│   │   │       ├── Bridge_20240429-222657.json
+│   │   │       ├── Bridge_20240429-222753.json
+│   │   │       ├── Bridge_20240429-222903.json
+│   │   │       ├── Bridge_20240429-223336.json
+│   │   │       ├── Bridge_20240429-224120.json
+│   │   │       ├── Bridge_20240429-225535.json
+│   │   │       ├── Bridge_20240429-225840.json
+│   │   │       └── Bridge_20240429-230007.json
+│   │   ├── Bridge.json
+│   │   ├── Catapult
+│   │   │   ├── Catapult.png
+│   │   │   └── templates
+│   │   │       ├── Catapult_20240429-230215.json
+│   │   │       ├── Catapult_20240429-230302.json
+│   │   │       ├── Catapult_20240429-230410.json
+│   │   │       ├── Catapult_20240429-230518.json
+│   │   │       ├── Catapult_20240429-231530.json
+│   │   │       ├── Catapult_20240429-231710.json
+│   │   │       ├── Catapult_20240429-231806.json
+│   │   │       ├── Catapult_20240429-231916.json
+│   │   │       ├── Catapult_20240429-232427.json
+│   │   │       └── Catapult_20240429-232802.json
+│   │   ├── Catapult.json
+│   │   ├── Chaining
+│   │   │   ├── Chaining.png
+│   │   │   └── templates
+│   │   │       ├── Chaining_20240430-002551.json
+│   │   │       ├── Chaining_20240430-003744.json
+│   │   │       ├── Chaining_20240430-004702.json
+│   │   │       ├── Chaining_20240430-005503.json
+│   │   │       ├── Chaining_20240430-012118.json
+│   │   │       ├── Chaining_20240430-012219.json
+│   │   │       ├── Chaining_20240430-012422.json
+│   │   │       ├── Chaining_20240430-012537.json
+│   │   │       ├── Chaining_20240430-012650.json
+│   │   │       └── Chaining_20240430-013032.json
+│   │   ├── Chaining.json
+│   │   ├── Falling_A
+│   │   │   ├── Falling_A.png
+│   │   │   └── templates
+│   │   │       ├── Falling_A_20240430-013450.json
+│   │   │       ├── Falling_A_20240430-013552.json
+│   │   │       ├── Falling_A_20240430-013706.json
+│   │   │       ├── Falling_A_20240430-013810.json
+│   │   │       ├── Falling_A_20240430-013926.json
+│   │   │       ├── Falling_A_20240430-014024.json
+│   │   │       ├── Falling_A_20240430-014118.json
+│   │   │       ├── Falling_A_20240430-014223.json
+│   │   │       ├── Falling_A_20240430-014349.json
+│   │   │       └── Falling_A_20240430-014547.json
+│   │   ├── Falling_A.json
+│   │   ├── Falling_B
+│   │   │   ├── Falling_B.png
+│   │   │   └── templates
+│   │   │       ├── Falling_B_20240430-014723.json
+│   │   │       ├── Falling_B_20240430-014806.json
+│   │   │       ├── Falling_B_20240430-014854.json
+│   │   │       ├── Falling_B_20240430-014931.json
+│   │   │       ├── Falling_B_20240430-015000.json
+│   │   │       ├── Falling_B_20240430-015044.json
+│   │   │       ├── Falling_B_20240430-015119.json
+│   │   │       ├── Falling_B_20240430-015229.json
+│   │   │       ├── Falling_B_20240430-015447.json
+│   │   │       └── Falling_B_20240430-015520.json
+│   │   ├── Falling_B.json
+│   │   ├── Gap
+│   │   │   ├── Gap.png
+│   │   │   └── templates
+│   │   │       ├── Gap_20240430-020055.json
+│   │   │       ├── Gap_20240430-020216.json
+│   │   │       ├── Gap_20240430-020324.json
+│   │   │       ├── Gap_20240430-020440.json
+│   │   │       ├── Gap_20240430-020610.json
+│   │   │       ├── Gap_20240430-020847.json
+│   │   │       ├── Gap_20240430-021013.json
+│   │   │       ├── Gap_20240430-021148.json
+│   │   │       ├── Gap_20240430-021320.json
+│   │   │       └── Gap_20240430-021440.json
+│   │   ├── Gap.json
+│   │   ├── Launch_A
+│   │   │   ├── Launch_A.png
+│   │   │   └── templates
+│   │   │       ├── Launch_A_20240430-162327.json
+│   │   │       ├── Launch_A_20240430-162655.json
+│   │   │       ├── Launch_A_20240430-162748.json
+│   │   │       ├── Launch_A_20240430-162933.json
+│   │   │       ├── Launch_A_20240430-163105.json
+│   │   │       ├── Launch_A_20240430-163957.json
+│   │   │       ├── Launch_A_20240501-192007.json
+│   │   │       ├── Launch_A_20240501-192208.json
+│   │   │       ├── Launch_A_20240501-192328.json
+│   │   │       ├── Launch_A_20240501-192502.json
+│   │   │       └── Launch_A_20240501-192745.json
+│   │   ├── Launch_A.json
+│   │   ├── Launch_B
+│   │   │   ├── Launch_B.png
+│   │   │   └── templates
+│   │   │       ├── Launch_B_20240501-192942.json
+│   │   │       ├── Launch_B_20240501-193124.json
+│   │   │       ├── Launch_B_20240501-193225.json
+│   │   │       ├── Launch_B_20240501-193440.json
+│   │   │       ├── Launch_B_20240502-125256.json
+│   │   │       ├── Launch_B_20240502-125442.json
+│   │   │       ├── Launch_B_20240502-125607.json
+│   │   │       ├── Launch_B_20240502-130400.json
+│   │   │       ├── Launch_B_20240502-221443.json
+│   │   │       └── Launch_B_20240502-221625.json
+│   │   ├── Launch_B.json
+│   │   ├── Prevention_A
+│   │   │   ├── Prevention_A.png
+│   │   │   └── templates
+│   │   │       ├── Prevention_A_20240502-221822.json
+│   │   │       ├── Prevention_A_20240502-222012.json
+│   │   │       ├── Prevention_A_20240502-222324.json
+│   │   │       ├── Prevention_A_20240502-222426.json
+│   │   │       ├── Prevention_A_20240502-222530.json
+│   │   │       ├── Prevention_A_20240502-223208.json
+│   │   │       ├── Prevention_A_20240502-223525.json
+│   │   │       ├── Prevention_A_20240502-224228.json
+│   │   │       ├── Prevention_A_20240502-224345.json
+│   │   │       └── Prevention_A_20240502-224451.json
+│   │   ├── Prevention_A.json
+│   │   ├── Prevention_B
+│   │   │   ├── Prevention_B.png
+│   │   │   └── templates
+│   │   │       ├── Prevention_B_20240502-224942.json
+│   │   │       ├── Prevention_B_20240502-225049.json
+│   │   │       ├── Prevention_B_20240502-225155.json
+│   │   │       ├── Prevention_B_20240502-225302.json
+│   │   │       ├── Prevention_B_20240502-225346.json
+│   │   │       ├── Prevention_B_20240502-225439.json
+│   │   │       ├── Prevention_B_20240502-225523.json
+│   │   │       ├── Prevention_B_20240502-225707.json
+│   │   │       ├── Prevention_B_20240502-225757.json
+│   │   │       └── Prevention_B_20240502-231300.json
+│   │   ├── Prevention_B.json
+│   │   ├── SeeSaw
+│   │   │   ├── SeeSaw.png
+│   │   │   └── templates
+│   │   │       ├── SeeSaw_20240502-231745.json
+│   │   │       ├── SeeSaw_20240502-231837.json
+│   │   │       ├── SeeSaw_20240502-231948.json
+│   │   │       ├── SeeSaw_20240503-001420.json
+│   │   │       ├── SeeSaw_20240503-181733.json
+│   │   │       ├── SeeSaw_20240503-181833.json
+│   │   │       ├── SeeSaw_20240503-181923.json
+│   │   │       ├── SeeSaw_20240503-182036.json
+│   │   │       ├── SeeSaw_20240503-182206.json
+│   │   │       └── SeeSaw_20240503-182307.json
+│   │   ├── SeeSaw.json
+│   │   ├── Shafts_A
+│   │   │   ├── Shafts_A.png
+│   │   │   └── templates
+│   │   │       ├── Shafts_A_20240503-182657.json
+│   │   │       ├── Shafts_A_20240503-191630.json
+│   │   │       ├── Shafts_A_20240503-192901.json
+│   │   │       ├── Shafts_A_20240503-193139.json
+│   │   │       ├── Shafts_A_20240503-193307.json
+│   │   │       ├── Shafts_A_20240503-193416.json
+│   │   │       ├── Shafts_A_20240503-194103.json
+│   │   │       ├── Shafts_A_20240503-194229.json
+│   │   │       ├── Shafts_A_20240503-194505.json
+│   │   │       └── Shafts_A_20240503-194654.json
+│   │   ├── Shafts_A.json
+│   │   ├── Shafts_B
+│   │   │   ├── Shafts_B.png
+│   │   │   └── templates
+│   │   │       ├── Shafts_B_20240503-195013.json
+│   │   │       ├── Shafts_B_20240503-195225.json
+│   │   │       ├── Shafts_B_20240503-195323.json
+│   │   │       ├── Shafts_B_20240503-195427.json
+│   │   │       ├── Shafts_B_20240503-195636.json
+│   │   │       ├── Shafts_B_20240504-143420.json
+│   │   │       ├── Shafts_B_20240504-143622.json
+│   │   │       ├── Shafts_B_20240504-143837.json
+│   │   │       ├── Shafts_B_20240504-144018.json
+│   │   │       └── Shafts_B_20240504-144123.json
+│   │   ├── Shafts_B.json
+│   │   ├── Table_A
+│   │   │   ├── Table_A.png
+│   │   │   └── templates
+│   │   │       ├── Table_A_20240504-144356.json
+│   │   │       ├── Table_A_20240504-144610.json
+│   │   │       ├── Table_A_20240504-144720.json
+│   │   │       ├── Table_A_20240504-145141.json
+│   │   │       ├── Table_A_20240504-145238.json
+│   │   │       ├── Table_A_20240504-145326.json
+│   │   │       ├── Table_A_20240504-160053.json
+│   │   │       ├── Table_A_20240504-160537.json
+│   │   │       ├── Table_A_20240504-161050.json
+│   │   │       └── Table_A_20240504-161922.json
+│   │   ├── Table_A.json
+│   │   ├── Table_B
+│   │   │   ├── Table_B.png
+│   │   │   └── templates
+│   │   │       ├── Table_B_20240504-234208.json
+│   │   │       ├── Table_B_20240504-234320.json
+│   │   │       ├── Table_B_20240504-234406.json
+│   │   │       ├── Table_B_20240504-234447.json
+│   │   │       ├── Table_B_20240504-234847.json
+│   │   │       ├── Table_B_20240504-235507.json
+│   │   │       ├── Table_B_20240505-000903.json
+│   │   │       ├── Table_B_20240505-002745.json
+│   │   │       ├── Table_B_20240505-002901.json
+│   │   │       └── Table_B_20240505-003018.json
+│   │   ├── Table_B.json
+│   │   ├── Towers_A
+│   │   │   ├── templates
+│   │   │   │   ├── Towers_A_20240505-232736.json
+│   │   │   │   ├── Towers_A_20240505-232855.json
+│   │   │   │   ├── Towers_A_20240505-232931.json
+│   │   │   │   ├── Towers_A_20240505-233012.json
+│   │   │   │   ├── Towers_A_20240505-233046.json
+│   │   │   │   ├── Towers_A_20240505-233117.json
+│   │   │   │   ├── Towers_A_20240505-233153.json
+│   │   │   │   ├── Towers_A_20240505-233240.json
+│   │   │   │   ├── Towers_A_20240505-233309.json
+│   │   │   │   └── Towers_A_20240505-233344.json
+│   │   │   └── Towers_A.png
+│   │   ├── Towers_A.json
+│   │   ├── Towers_B
+│   │   │   ├── templates
+│   │   │   │   ├── Towers_B_20240505-233548.json
+│   │   │   │   ├── Towers_B_20240505-233720.json
+│   │   │   │   ├── Towers_B_20240505-233824.json
+│   │   │   │   ├── Towers_B_20240505-233919.json
+│   │   │   │   ├── Towers_B_20240505-234709.json
+│   │   │   │   ├── Towers_B_20240505-234748.json
+│   │   │   │   ├── Towers_B_20240505-234821.json
+│   │   │   │   ├── Towers_B_20240505-234901.json
+│   │   │   │   ├── Towers_B_20240505-235118.json
+│   │   │   │   └── Towers_B_20240505-235203.json
+│   │   │   └── Towers_B.png
+│   │   ├── Towers_B.json
+│   │   ├── Unbox
+│   │   │   ├── templates
+│   │   │   │   ├── Unbox_20240505-185225.json
+│   │   │   │   ├── Unbox_20240505-190925.json
+│   │   │   │   ├── Unbox_20240505-192019.json
+│   │   │   │   ├── Unbox_20240505-192232.json
+│   │   │   │   ├── Unbox_20240505-192329.json
+│   │   │   │   ├── Unbox_20240505-193034.json
+│   │   │   │   ├── Unbox_20240505-193247.json
+│   │   │   │   ├── Unbox_20240505-193347.json
+│   │   │   │   ├── Unbox_20240505-193425.json
+│   │   │   │   └── Unbox_20240505-193725.json
+│   │   │   ├── Unbox_20240505-185225.json
+│   │   │   ├── Unbox_20240505-190925.json
+│   │   │   ├── Unbox_20240505-192019.json
+│   │   │   ├── Unbox_20240505-192232.json
+│   │   │   ├── Unbox_20240505-192329.json
+│   │   │   ├── Unbox_20240505-193034.json
+│   │   │   ├── Unbox_20240505-193247.json
+│   │   │   ├── Unbox_20240505-193347.json
+│   │   │   ├── Unbox_20240505-193425.json
+│   │   │   ├── Unbox_20240505-193725.json
+│   │   │   └── Unbox.png
+│   │   ├── Unbox.json
+│   │   ├── Unsupport
+│   │   │   ├── templates
+│   │   │   │   ├── Unsupport_20240505-193931.json
+│   │   │   │   ├── Unsupport_20240505-194332.json
+│   │   │   │   ├── Unsupport_20240505-194500.json
+│   │   │   │   ├── Unsupport_20240505-194620.json
+│   │   │   │   ├── Unsupport_20240505-194718.json
+│   │   │   │   ├── Unsupport_20240505-194822.json
+│   │   │   │   ├── Unsupport_20240505-195045.json
+│   │   │   │   ├── Unsupport_20240505-231332.json
+│   │   │   │   ├── Unsupport_20240505-231502.json
+│   │   │   │   └── Unsupport_20240505-232053.json
+│   │   │   ├── Unsupport_20240505-193931.json
+│   │   │   ├── Unsupport_20240505-194332.json
+│   │   │   ├── Unsupport_20240505-194500.json
+│   │   │   ├── Unsupport_20240505-194620.json
+│   │   │   ├── Unsupport_20240505-194718.json
+│   │   │   ├── Unsupport_20240505-194822.json
+│   │   │   ├── Unsupport_20240505-195045.json
+│   │   │   ├── Unsupport_20240505-231332.json
+│   │   │   ├── Unsupport_20240505-231502.json
+│   │   │   ├── Unsupport_20240505-232053.json
+│   │   │   └── Unsupport.png
+│   │   └── Unsupport.json
+│   └── Validation
+│       ├── Balance.json
+│       ├── BasicAlt.json
+│       ├── Collapse.json
+│       ├── FallingAlt.json
+│       ├── LaunchAlt.json
+│       ├── Remove.json
+│       ├── Shove.json
+│       ├── Spiky.json
+│       ├── TableAlt.json
+│       └── Trap.json
+├── trials_data
+│   ├── cv_levels
+│   │   ├── humans
+│   │   │   └── FullGameSuccessDataCV.csv
+│   │   └── models
+│   │       ├── ablations_phys_mem.csv
+│   │       ├── ablations_pri_mem.csv
+│   │       ├── ablations_pri_phys.csv
+│   │       ├── altmod_dqn.csv
+│   │       ├── altmod_param_learn.csv
+│   │       ├── guessing_stats.csv
+│   │       └── ssup_full.csv
+│   ├── original_levels
+│   │   ├── humans
+│   │   │   └── FullGameSuccessData.csv
+│   │   └── models
+│   │       ├── ablations_phys_mem.csv
+│   │       ├── ablations_pri_mem.csv
+│   │       ├── ablations_pri_phys.csv
+│   │       ├── altmod_dqn.csv
+│   │       ├── altmod_param_learn.csv
+│   │       ├── guessing_stats.csv
+│   │       └── ssup_full.csv
+│   └── README.md
+├── utils
+│   ├── environment_utils.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── environment_utils.cpython-39.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   └── utils.cpython-39.pyc
+│   └── utils.py
+├── vtviewer
+│   ├── __init__.py
+│   ├── interfaces.py
+│   ├── movies.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── interfaces.cpython-39.pyc
+│   │   ├── movies.cpython-39.pyc
+│   │   └── visualization.cpython-39.pyc
+│   ├── visualization.py
+│   └── visualize_likelihoods.py
+└── world
+    ├── abstracts.py
+    ├── conditions.py
+    ├── constants.py
+    ├── __init__.py
+    ├── noisyworld.py
+    ├── object.py
+    ├── __pycache__
+    │   ├── abstracts.cpython-39.pyc
+    │   ├── conditions.cpython-39.pyc
+    │   ├── constants.cpython-39.pyc
+    │   ├── __init__.cpython-39.pyc
+    │   ├── noisyworld.cpython-39.pyc
+    │   ├── object.cpython-39.pyc
+    │   └── world.cpython-39.pyc
+    └── world.py
+
+64 directories, 360 files
