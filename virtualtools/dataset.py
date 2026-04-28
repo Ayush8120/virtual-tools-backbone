@@ -1,4 +1,5 @@
 #imports
+import gc
 import json
 import numpy as np
 from scipy.stats import qmc
@@ -241,10 +242,11 @@ def simulate_single_puzzle(set, name, variation, actions, size, tool, output_siz
             act_masks.append(step_masks)
 
         if error:
-            continue  
+            continue
         boxes.append(act_boxes)
         masks.append(act_masks)
         labels.append(1 if success else 0)
+        gc.collect()
 
     # return all actions without tool (placed at the end of the list) plus
     # size - number of actions without tool actions from the beginning of the list
