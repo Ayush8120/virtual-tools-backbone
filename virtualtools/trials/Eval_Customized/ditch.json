@@ -1,0 +1,569 @@
+{
+  "world": {
+    "dims": [
+      600,
+      600
+    ],
+    "bts": 0.01,
+    "gravity": 200,
+    "defaults": {
+      "density": 1,
+      "friction": 0.5,
+      "elasticity": 0.5,
+      "color": "black",
+      "bk_color": "white"
+    },
+    "objects": {
+      "Object1": {
+        "name": "Object1",
+        "vertices": [
+          [
+            249,
+            138
+          ],
+          [
+            246,
+            -1
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object2": {
+        "name": "Object2",
+        "polys": [
+          [
+            [
+              600,
+              -2
+            ],
+            [
+              296,
+              -1
+            ],
+            [
+              295,
+              134
+            ]
+          ],
+          [
+            [
+              601,
+              247
+            ],
+            [
+              600,
+              -2
+            ],
+            [
+              295,
+              134
+            ]
+          ],
+          [
+            [
+              294,
+              150
+            ],
+            [
+              601,
+              247
+            ],
+            [
+              295,
+              134
+            ]
+          ]
+        ],
+        "color": "black",
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Compound"
+      },
+      "Object3": {
+        "name": "Object3",
+        "vertices": [
+          [
+            6,
+            323.6666666666667
+          ],
+          [
+            375,
+            269.6666666666667
+          ],
+          [
+            6,
+            279.6666666666667
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object4": {
+        "name": "Object4",
+        "vertices": [
+          [
+            503,
+            283
+          ],
+          [
+            10,
+            192
+          ],
+          [
+            9,
+            204
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object5": {
+        "name": "Object5",
+        "points": [
+          [
+            253.9990656388694,
+            41.70590983415093
+          ],
+          [
+            253.9990656388694,
+            -0.2940901658490702
+          ],
+          [
+            288.9990656388694,
+            -1.2940901658490702
+          ],
+          [
+            286.9990656388694,
+            40.70590983415093
+          ]
+        ],
+        "width": 5,
+        "innerColor": "green",
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Container"
+      },
+      "Object6": {
+        "name": "Object6",
+        "position": [
+          54,
+          388
+        ],
+        "radius": 16.401219466856727,
+        "color": "blue",
+        "density": "1",
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Ball"
+      },
+      "Object8": {
+        "name": "Object8",
+        "vertices": [
+          [
+            10.765327695560252,
+            341.8632840028189
+          ],
+          [
+            62.76532769556025,
+            341.8632840028189
+          ],
+          [
+            62.76532769556025,
+            323.8632840028189
+          ],
+          [
+            6.765327695560252,
+            324.8632840028189
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object7": {
+        "name": "Object7",
+        "vertices": [
+          [
+            251,
+            149
+          ],
+          [
+            252,
+            133
+          ],
+          [
+            210,
+            117
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object9": {
+        "name": "Object9",
+        "polys": [
+          [
+            [
+              67,
+              338
+            ],
+            [
+              108,
+              333
+            ],
+            [
+              119,
+              304
+            ]
+          ],
+          [
+            [
+              119,
+              304
+            ],
+            [
+              185,
+              324
+            ],
+            [
+              361,
+              273
+            ]
+          ],
+          [
+            [
+              119,
+              304
+            ],
+            [
+              361,
+              273
+            ],
+            [
+              59,
+              308
+            ]
+          ],
+          [
+            [
+              67,
+              338
+            ],
+            [
+              119,
+              304
+            ],
+            [
+              59,
+              308
+            ]
+          ]
+        ],
+        "color": "black",
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Compound"
+      },
+      "_LeftWall": {
+        "name": "_LeftWall",
+        "vertices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            601
+          ],
+          [
+            1,
+            601
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_BottomWall": {
+        "name": "_BottomWall",
+        "vertices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            601,
+            1
+          ],
+          [
+            601,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_TopWall": {
+        "name": "_TopWall",
+        "vertices": [
+          [
+            -1,
+            599
+          ],
+          [
+            -1,
+            601
+          ],
+          [
+            601,
+            601
+          ],
+          [
+            601,
+            599
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_RightWall": {
+        "name": "_RightWall",
+        "vertices": [
+          [
+            599,
+            -1
+          ],
+          [
+            599,
+            601
+          ],
+          [
+            601,
+            601
+          ],
+          [
+            601,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      }
+    },
+    "blocks": {
+      "block2": {
+        "name": "block2",
+        "vertices": [
+          [
+            101,
+            284
+          ],
+          [
+            248,
+            284
+          ],
+          [
+            248,
+            103
+          ],
+          [
+            101,
+            103
+          ]
+        ],
+        "color": "grey",
+        "type": "Blocker"
+      }
+    },
+    "constraints": {},
+    "gcond": {
+      "type": "SpecificInGoal",
+      "obj": "Object6",
+      "goal": "Object5",
+      "duration": "3"
+    }
+  },
+  "tools": {
+    "obj1": [
+      [
+        [
+          -31,
+          23
+        ],
+        [
+          35,
+          25
+        ],
+        [
+          -7,
+          -25
+        ],
+        [
+          -34,
+          -25
+        ]
+      ]
+    ],
+    "obj2": [
+      [
+        [
+          -24,
+          -28
+        ],
+        [
+          -24,
+          -22
+        ],
+        [
+          -20,
+          -22
+        ]
+      ],
+      [
+        [
+          -24,
+          -28
+        ],
+        [
+          -20,
+          -22
+        ],
+        [
+          -20,
+          -27
+        ]
+      ],
+      [
+        [
+          7,
+          -27
+        ],
+        [
+          -24,
+          -28
+        ],
+        [
+          -20,
+          -27
+        ]
+      ],
+      [
+        [
+          7,
+          -27
+        ],
+        [
+          -20,
+          -27
+        ],
+        [
+          5,
+          -26
+        ]
+      ],
+      [
+        [
+          34,
+          13
+        ],
+        [
+          7,
+          -27
+        ],
+        [
+          5,
+          -26
+        ]
+      ],
+      [
+        [
+          34,
+          13
+        ],
+        [
+          5,
+          -26
+        ],
+        [
+          11,
+          43
+        ]
+      ]
+    ],
+    "obj3": [
+      [
+        [
+          -10,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          21,
+          -3
+        ],
+        [
+          21,
+          -24
+        ],
+        [
+          -18,
+          -29
+        ],
+        [
+          -21,
+          -3
+        ]
+      ]
+    ]
+  },
+  "toolNames": [
+    "obj1",
+    "obj2",
+    "obj3"
+  ],
+  "sucText": "Enter the goal condition text here"
+}

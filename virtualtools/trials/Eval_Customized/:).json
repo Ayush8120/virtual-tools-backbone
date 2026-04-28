@@ -1,0 +1,361 @@
+{
+  "world": {
+    "dims": [
+      600,
+      600
+    ],
+    "bts": 0.01,
+    "gravity": 200,
+    "defaults": {
+      "density": 1,
+      "friction": 0.5,
+      "elasticity": 0.5,
+      "color": "black",
+      "bk_color": "white"
+    },
+    "objects": {
+      "Object1": {
+        "name": "Object1",
+        "vertices": [
+          [
+            155,
+            354
+          ],
+          [
+            440,
+            354
+          ],
+          [
+            440,
+            150
+          ],
+          [
+            155,
+            150
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object6": {
+        "name": "Object6",
+        "vertices": [
+          [
+            551,
+            526
+          ],
+          [
+            598,
+            526
+          ],
+          [
+            598,
+            44
+          ],
+          [
+            551,
+            44
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "Object7": {
+        "name": "Object7",
+        "vertices": [
+          [
+            387.5,
+            385
+          ],
+          [
+            428.5,
+            385
+          ],
+          [
+            428.5,
+            345
+          ],
+          [
+            387.5,
+            345
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "ball": {
+        "name": "ball",
+        "position": [
+          117,
+          554
+        ],
+        "radius": 14.866068747318506,
+        "color": "blue",
+        "density": "1",
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Ball"
+      },
+      "container": {
+        "name": "container",
+        "points": [
+          [
+            453,
+            173
+          ],
+          [
+            455,
+            69
+          ],
+          [
+            554,
+            69
+          ],
+          [
+            550,
+            169
+          ]
+        ],
+        "width": 5,
+        "innerColor": "green",
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Container"
+      },
+      "Object2": {
+        "name": "Object2",
+        "polys": [
+          [
+            [
+              90,
+              561
+            ],
+            [
+              310,
+              352
+            ],
+            [
+              274,
+              355
+            ]
+          ],
+          [
+            [
+              90,
+              561
+            ],
+            [
+              274,
+              355
+            ],
+            [
+              165,
+              355
+            ]
+          ],
+          [
+            [
+              90,
+              561
+            ],
+            [
+              165,
+              355
+            ],
+            [
+              87,
+              568
+            ]
+          ]
+        ],
+        "color": "black",
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "type": "Compound"
+      },
+      "_LeftWall": {
+        "name": "_LeftWall",
+        "vertices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            601
+          ],
+          [
+            1,
+            601
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_BottomWall": {
+        "name": "_BottomWall",
+        "vertices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            601,
+            1
+          ],
+          [
+            601,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_TopWall": {
+        "name": "_TopWall",
+        "vertices": [
+          [
+            -1,
+            599
+          ],
+          [
+            -1,
+            601
+          ],
+          [
+            601,
+            601
+          ],
+          [
+            601,
+            599
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      },
+      "_RightWall": {
+        "name": "_RightWall",
+        "vertices": [
+          [
+            599,
+            -1
+          ],
+          [
+            599,
+            601
+          ],
+          [
+            601,
+            601
+          ],
+          [
+            601,
+            -1
+          ]
+        ],
+        "density": 0,
+        "elasticity": "0.5",
+        "friction": "0.5",
+        "color": "black",
+        "type": "Poly"
+      }
+    },
+    "blocks": {},
+    "constraints": {},
+    "gcond": {
+      "type": "SpecificInGoal",
+      "obj": "ball",
+      "goal": "container",
+      "duration": "3"
+    }
+  },
+  "tools": {
+    "obj1": [
+      [
+        [
+          24,
+          30
+        ],
+        [
+          29,
+          -19
+        ],
+        [
+          -17,
+          -21
+        ]
+      ]
+    ],
+    "obj2": [
+      [
+        [
+          6,
+          21
+        ],
+        [
+          21,
+          17
+        ],
+        [
+          4,
+          -20
+        ],
+        [
+          -16,
+          -19
+        ]
+      ]
+    ],
+    "obj3": [
+      [
+        [
+          21,
+          39
+        ],
+        [
+          38,
+          9
+        ],
+        [
+          -28,
+          -25
+        ]
+      ]
+    ]
+  },
+  "toolNames": [
+    "obj1",
+    "obj2",
+    "obj3"
+  ],
+  "sucText": "Get the ball into the goal"
+}
