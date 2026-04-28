@@ -15,4 +15,3 @@ pycparser==2.21
 pygame==2.4.0
 pymunk==6.4.0
 scipy==1.10.1
-typing_extensions==4.6.2
