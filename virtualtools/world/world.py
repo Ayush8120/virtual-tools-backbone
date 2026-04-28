@@ -12,6 +12,7 @@ import pdb
 
 __all__ = ["VTWorld", "load_vt_from_dict"]
 
+
 def _empty_collision_handler(arb: pm.Arbiter, space: pm.Space):
     return True
 
