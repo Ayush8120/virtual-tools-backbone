@@ -362,7 +362,7 @@ class VTCompound(VTObject):
                 sh.name = name
                 space.add(sh)
                 self._cpShapes.append(sh)
-                self.polylist.append([pm.Vec2d(p) for p in vertices])
+                self.polylist.append([pm.Vec2d(p[0], p[1]) for p in vertices])
 
             gx = gy = 0
             for pc, a in zip(polyCents, areas):
