@@ -154,15 +154,12 @@ def simulate_single_puzzle(set, name, variation, actions, size, tool, output_siz
         # get dynamic objects list
         dynamic_objects = wd.get_dynamic_objects()
         
-        final_actions.append(act)
         img_array = makeImageArrayAsNumpy(wd, path_dict, sample_ratio=1)
         # resize images
         original_size = img_array[0].shape
         img_array = [cv2.resize(img, (output_size, output_size), interpolation=cv2.INTER_NEAREST) for img in img_array]
         img_array = np.array(img_array)
 
-        imgs.append(img_array)
-        
         act_boxes = []
         act_masks = []
 
@@ -240,6 +237,10 @@ def simulate_single_puzzle(set, name, variation, actions, size, tool, output_siz
 
         if error:
             continue  
+        # append the image and action only for runs that are kept, so that
+        # imgs, labels, boxes, masks and final_actions stay index-aligned
+        final_actions.append(act)
+        imgs.append(img_array)
         boxes.append(act_boxes)
         masks.append(act_masks)
         labels.append(1 if success else 0)
